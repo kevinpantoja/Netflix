@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 240, 240);
+    background-color: rgb(10, 10, 10);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    transition: all;
+    transition-duration: .3s;
+    border: none;
+}
+body{
+    font-size: 17px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 2em 0em;
+    align-items: center;
+}
+.encabezado__logo{
+    height: 2em;
+    filter: brightness(130%);
+}
+.encabezado__icon{
+    display: flex;
+    font-size: 1.3em;
+    gap: 1em;
+    cursor: pointer;
+    align-items: center;
+}
+#cuentas{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1000px;
+}
+.cuentas__txt{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+.contenedor__cuenta:hover > .contenedor__cuenta__img{
+    border: 0.25em solid white;
+}
+.contenedor__cuenta:hover > .contenedor__cuenta__txt{
+    color: white;
+}
+.contenedor__cuenta{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.lapiz-edicion{
+    height: 0px;    
+}
+.lapiz-oculto{
+    display: none;
+}
+.contenedor__cuenta__img{
+    width: 100px;
+    height: 100px;
+    border: 0.25em solid rgba(255, 255, 255, 0);
+    filter: brightness(115%);
+}
+.contenedor__cuenta__txt{
+    color: rgb(167, 157, 157);
+    margin-top: 0.5em;
+    position: relative;
+}
+.img-edicion{
+    filter: brightness(70%);
+}
+.lapiz{
+    position: relative;
+    top: -70px;
+    border: 2px solid white;
+    padding: .5em;
+    border-radius: 50%;
+    background: none;
+}
