@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Netflix</title>
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="/img/netflix-icono.png" type="image/png">
@@ -15,18 +16,27 @@
         <img class="encabezado__logo" src="/img/netflix-logo.png" alt="">
     </header>
     <section id="formulario">
-        <h1>Inicia sesión</h1>
-        <form action="">
-            <input type="text" id="input__email" placeholder="Email o número de teléfono">
-            <span>Ingrese un email o un número de teléfono válido.</span>
-            <input type="text" id="input__password" placeholder="contraseña">
-            <span>La contraseña debe tener entre 6 y 40 caracteres</span>
-            <button type="submit">Iniciar sesion</button>
-            <label for=""><input type="checkbox">Recuérdame</label>
+        <h1 class="formulario__txt">Inicia sesión</h1>
+        <form action="" class="formulario__elementos">
+            <div>
+                <input class="formulario__textbox" type="text" id="input__email" placeholder="Email o número de teléfono">
+                <span class="formulario__notify">Ingrese un email o un número de teléfono válido.</span>    
+            </div>
+            <div>
+                <input class="formulario__textbox" type="text" id="input__password" placeholder="contraseña">
+                <span class="formulario__notify">La contraseña debe tener entre 6 y 40 caracteres.</span>    
+            </div>
+            <button class="formulario__enviar" type="submit">Iniciar sesion</button>
+            <label class="formulario__check" for=""><input type="checkbox">Recuérdame</label>
         </form>
-        <span>¿Primera vez en Netflix?</span><a href="">Suscríbete ya</a><br>
-        <span>Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot. </span>
-        <a href="">Más info.</a>
+        <div>
+            <span>¿Primera vez en Netflix?</span><a href="">Suscríbete ya</a><br>
+        </div>
+        <div>
+            <span>Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot. </span>
+            <a href="">Más info.</a>    
+        </div>
+        
     </section>
     <footer>
         <h2>¿Preguntas? Llama al 0-800-52352</h2>

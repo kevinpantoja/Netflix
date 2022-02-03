@@ -8,6 +8,7 @@
     transition: all;
     transition-duration: .3s;
     border: none;
+    box-sizing: border-box;
 }
 body{
     font-size: 17px;
@@ -48,6 +49,7 @@ body{
     flex-wrap: wrap;
     gap: 2em;
     justify-content: center;
+    margin: 0 3rem;
 }
 .contenedor__cuenta:hover > .contenedor__cuenta__img{
     border: 0.25em solid white;
@@ -88,4 +90,23 @@ body{
     padding: .5em;
     border-radius: 50%;
     background: none;
+}
+/*responsive*/
+@media (max-width: 500px) {
+    body{
+        font-size: 14px;
+    }
+    #cuentas{
+        max-width: none;
+    }
+    .encabezado__icon > span{
+        display: none;
+    }
+    .encabezado__icon{
+        font-size: 1.7em;
+    }
+    .cuentas__txt{
+        padding: 2em 0 2em;
+        margin: 0;
+    }
 }

@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 240, 240);
+    font-family: 'Roboto', sans-serif;
+    transition: all;
+    transition-duration: .3s;
+    border: none;
+    box-sizing: border-box;
+    background: none;
+	border: none;
+	outline: inherit;
+}
+body{
+    font-size: 22px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(/img/fondo-login.jpg);
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em 0em;
+    align-items: center;
+}
+.encabezado__logo{
+    height: 2em;
+    filter: brightness(150%);
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 500px;
+    margin: 1.5em auto 3em;
+    background-color: rgba(3, 3, 3, 0.822);
+    padding: 2em 3em;
+    border-radius: .25em;
+}
+#formulario > div > span{
+    font-size: .6em;
+}
+#formulario > div > a{
+    font-size: .7em;
+    text-decoration: none;
+    color: rgb(121, 121, 218);
+    margin-left: .5em;
+}
+.formulario__txt{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+}
+.formulario__textbox::placeholder{
+    color: rgb(177, 169, 169);
+}
+.formulario__elementos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1.5em 0 1em;
+}
+.formulario__textbox{
+    width: 100%;
+    font-size: .7em;
+    background-color: rgb(94, 91, 91);
+    border-radius: .25em;
+    line-height: 2em;
+    color: white;
+    padding: .3em 1em .3em;
+}
+.formulario__notify{
+    font-size: .6em;
+}
+.formulario__enviar{
+    background-color: rgb(184,29,36);
+    width: 100%;
+    font-size: .8em;
+    color: white;
+    font-weight: bold;
+    border-radius: .25em;
+    padding: .7em 0;
+    margin-top: 2em;
+}
+.formulario__check{
+    display: flex;
+    font-size: .7em;
+    gap: .3em;
+    align-items: center;
+    margin-top: .5em;
+}
+footer{
+    background-color: rgba(3, 3, 3, 0.822);
+}

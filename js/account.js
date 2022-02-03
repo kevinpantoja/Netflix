@@ -23,7 +23,7 @@ administrar.onclick = () => {
             cuenta.classList.add("lapiz-oculto");
         }
         titulo.innerText = "¿Quién está viendo ahora?";
-        administrar.innerHTML = '<i class="fas fa-pencil-alt"></i><span>Administrar</span>';
+        administrar.innerHTML = '<i class="fas fa-pen"></i><span>Administrar</span>';
     }
     estado = !estado;
 };
