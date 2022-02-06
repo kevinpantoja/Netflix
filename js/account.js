@@ -1,6 +1,6 @@
 var administrar = document.getElementById("administrar");
 var estado = false;
-administrar.onclick = () => {
+administrar.onclick = function() {
     let titulo = document.getElementById("titulo");
     if(!estado){
         let contenedores = document.getElementsByClassName("contenedor__cuenta__img");

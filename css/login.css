@@ -10,11 +10,12 @@
     background: none;
 	border: none;
 	outline: inherit;
+    text-decoration: none;
 }
 body{
     font-size: 22px;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(/img/fondo-login.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(/img/fondo-login.jpg);
     display: flex;
     background-size: cover;
     flex-direction: column;
@@ -34,7 +35,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 500px;
+    max-width: 450px;
     margin: 1.5em auto 3em;
     background-color: rgba(3, 3, 3, 0.822);
     padding: 2em 3em;
@@ -50,7 +51,7 @@ body{
     margin-left: .5em;
 }
 .formulario__txt{
-    font-weight: bold;
+    font-weight:bolder;
     font-size: 1.5em;
     color: white;
 }
@@ -58,10 +59,14 @@ body{
     color: rgb(177, 169, 169);
 }
 .formulario__elementos{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 1.5em 0 1em;
+    margin: 0.4em 0 1em;
+}
+.formulario__elementos > div{
+    width: 100%;
 }
 .formulario__textbox{
     width: 100%;
@@ -71,12 +76,15 @@ body{
     line-height: 2em;
     color: white;
     padding: .3em 1em .3em;
+    margin-top: 1.3rem;
 }
 .formulario__notify{
     font-size: .6em;
+    color: #E87C03;
+    display: NONE;
 }
 .formulario__enviar{
-    background-color: rgb(184,29,36);
+    background-color: #E50914;
     width: 100%;
     font-size: .8em;
     color: white;
@@ -84,6 +92,7 @@ body{
     border-radius: .25em;
     padding: .7em 0;
     margin-top: 2em;
+    cursor: pointer;
 }
 .formulario__check{
     display: flex;
@@ -94,4 +103,67 @@ body{
 }
 footer{
     background-color: rgba(3, 3, 3, 0.822);
+    font-size: .7rem;
+    padding: 2rem 13% 5rem;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+footer h2,footer a{
+    color:#757575;
+} 
+#enlaces-footer{
+    display: grid;
+    font-size: .8rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 1rem;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:700px){
+    html{
+        font-size: 12px;
+    }
+    body{
+        background-image: none;
+        background-color: black;
+    }
+    .encabezado{
+        padding: 1em 1em;
+    }
+    .encabezado__logo{
+        height: 1em;
+        filter: brightness(150%);
+    }
+    #formulario{
+        margin: 0 auto;
+        max-width: none;
+        padding: 2em 1.5em;
+    }
+    footer{
+        border-top: 1px solid #757575;
+        padding: 2rem 7% 5rem;
+    }
+    #enlaces-footer{
+        font-size: 1rem;
+        gap: .5rem;
+    }
+
+}
+
+
+#alerta-incompatible{
+    background-color: #E50914;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    display: none;
 }

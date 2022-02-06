@@ -8,23 +8,24 @@
     <link rel="stylesheet" href="/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="/img/netflix-icono.png" type="image/png">
+    <link rel="icon" href="/img/Netflix_2015_N_logo.svg" type="image/svg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="encabezado">
-        <img class="encabezado__logo" src="/img/netflix-logo.png" alt="">
+        <img class="encabezado__logo" src="/img/netflix-logo.png" style="filter: brightness(120%);"alt="">
     </header>
     <section id="formulario">
         <h1 class="formulario__txt">Inicia sesión</h1>
-        <form action="" class="formulario__elementos">
+        <div id="alerta-incompatible"><i class="fas fa-exclamation-triangle"></i>   Datos ingresados erroneos</div>
+        <form action="" id="formilario" class="formulario__elementos">
             <div>
-                <input class="formulario__textbox" type="text" id="input__email" placeholder="Email o número de teléfono">
-                <span class="formulario__notify">Ingrese un email o un número de teléfono válido.</span>    
+                <input class="formulario__textbox" name="correo" autocomplete="off" type="text" id="input__correo" placeholder="Email o número de teléfono">
+                <span class="formulario__notify" id="notify__correo">Ingrese un email o un número de teléfono válido.</span>    
             </div>
             <div>
-                <input class="formulario__textbox" type="text" id="input__password" placeholder="contraseña">
-                <span class="formulario__notify">La contraseña debe tener entre 6 y 40 caracteres.</span>    
+                <input class="formulario__textbox" name="password" type="password" id="input__password" placeholder="contraseña">
+                <span class="formulario__notify" id="notify__password">La contraseña debe tener entre 6 y 40 caracteres.</span>    
             </div>
             <button class="formulario__enviar" type="submit">Iniciar sesion</button>
             <label class="formulario__check" for=""><input type="checkbox">Recuérdame</label>
@@ -36,25 +37,19 @@
             <span>Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot. </span>
             <a href="">Más info.</a>    
         </div>
-        
     </section>
     <footer>
         <h2>¿Preguntas? Llama al 0-800-52352</h2>
-        <div>
+        <section id="enlaces-footer">
             <a href="">Preguntas frecuentes</a>
-            <a href="">Privacidad</a>
-        </div>
-        <div>
             <a href="">Centro de ayuda</a>
-            <a href="">Preferencia de cookies</a>
-        </div>
-        <div>
             <a href="">Técnicas de uso</a>
-            <a href="">Información coorporativa</a>
-        </div>
+            <a href="">Privacidad</a>
+            <a href="">Preferencia de cookies</a>
+            <a href="">Información coorporativa</a>  
+        </section> 
     </footer>
     <script src="https://kit.fontawesome.com/c577200585.js" crossorigin="anonymous"></script>
-    <script src="js/account.js"></script>
+    <script src="js/login.js"></script>
 </body>
-
 </html>
