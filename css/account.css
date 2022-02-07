@@ -70,8 +70,8 @@ body{
     display: none;
 }
 .contenedor__cuenta__img{
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     border: 0.25em solid rgba(255, 255, 255, 0);
     filter: brightness(115%);
 }
