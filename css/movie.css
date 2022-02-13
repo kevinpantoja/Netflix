@@ -385,7 +385,7 @@ main{
   
 
 
-@media(max-width:600px){
+@media(max-width:750px){
     
     .content-top{
         height: 5%;
@@ -424,7 +424,7 @@ main{
     }
 
 }
-@media(max-width:200px){
+@media(max-width:220px){
 
     .container-vol{
         display: none;
