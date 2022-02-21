@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fuentes de letra de Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Playfair+Display:ital@0;1&family=Supermercado+One&family=Syne+Tactile&display=swap" rel="stylesheet">
+    
+    <!--Librerias de normalize y gliderJs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.css" integrity="sha512-xcz2kgNDovRs9/wYWii2XSBEDlpaTq99iewiGN3PR/pNnPaSDiw6wHpXU0kFyonevdVj/MkeesxMII8sgolFCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="img/netflix-icono.png">
+    <link rel="stylesheet" href="css/movie.css">
+    <title>Movies</title>
+</head>
+<body>
+    <header class="header">
+        <video muted autoplay src="img/movie/SpiderMan-NWH.mp4" class="header__video" id="header__video"></video>
+        <nav class="header-nav">
+            <div for="" class="nav-left">
+                <span class="fa fa-bars fa-lg  nav-left__icon1"></span>
+                <a href="index.html"><img src="img/netflix-logo.png" class="nav-left__icon2" alt=""></a>
+            </div>
+            <div for="" class="nav-right">
+                <span class="fa fa-search fa-lg  nav-right__icon3"></span>
+                <span class="fas fa-ellipsis-h fa-lg  nav-right__icon4"></span>
+            </div>                                                
+        </nav>                                                                          
+        <div class="container-points">
+            <a class="container-points__a" href="">Configuración</a>
+            <a class="container-points__a" href="">Información</a>
+        </div>
+             
+        <div class="container-content">
+            <div class="content-top">
+                <img class="container-content__img" src="img/Netflix_2015_N_logo.svg" alt="" >
+                <h2 class="container-content__toph2">PELÍCULA</h2>
+            </div>
+
+            <div class="content-medium">
+                <h1 class="container-content__med-h1">SPIDER MAN</h1>
+                <h2 class="container-content__med-h2">No Way Home</h2>
+            </div>
+            
+            <div class="content-bottom">
+                <button class="fas fa-play container-content__play"> Reproducir</button>
+                <button class="fas fa-plus container-content__list "> Mi lista</button>
+            </div>
+        </div>
+
+        <div class="container-vol">
+            <div class="container-vol__vol ">
+                <i class="fas fa-volume-off"></i>
+            </div>
+            <div class="container-vol__bar"></div>
+        </div> 
+       
+        <div class="container-search">
+            <input type="text" id="container-search__input" placeholder="Ingrese un nombre" >
+            <img class="container-search__icon1" src="img/movie/close.svg" alt="">
+        </div>
+    </header>
+
+
+    <main>
+        <section class="section-movies">
+            <h2 class="section-movies__title">Peliculas populares</h2>
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="anterior" class="carousel__anterior1  carousel__anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel__lista">
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/002_m.jpg" alt="">
+                            <p class="carousel__p">TITULO: VENOM 2</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/portada.png " alt="">
+                            <p class="carousel__p">TITULO: NO TIME NO DIE</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/39d101063c4e217323df91b0551175af.jpg" alt="">
+                            <p class="carousel__p">TITULO: TITANIC</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/4aa709fb827464c325ee3c63f07b8a6c.jpg" alt="">
+                            <p class="carousel__p">TITULO: MALÉFICA</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/001_m.jpg" alt="">
+                            <p class="carousel__p">TITULO: RUEGA POR NOSOTROS</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/black-panther-posters-individuales_8.jpg" alt="">
+                            <p class="carousel__p">TITULO: PANTERA NEGRA</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/images.jpg" alt="">
+                            <p class="carousel__p">TITULO: JHON WICK 3</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/descarga.jpg" alt="">
+                            <p class="carousel__p">TITULO: SPIDER-MAN NO WAY HOME</p>
+                        </div>   
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/5165456.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt="">
+                            <p class="carousel__p">TITULO: UNCHARTED </p>
+                        </div>
+                    </div>
+                    <button aria-label="siguiente" class="carousel__siguiente1  carousel__siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <!--Div para los indicadores, tendrá un rol de tablist el cual tendrá una lista de tabulación-->
+                <div role="tablist" class="carousel__indicadores1 carousel__indicadores"></div>
+            </div>            
+        </section>  
+        <section class="section-movies">
+            <h2 class="section-movies__title">Peliculas en estreno</h2>
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="anterior" class="carousel__anterior2  carousel__anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel__lista">
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/5165456.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt="">
+                            <p class="carousel__p">TITULO: UNCHARTED </p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/5165456.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt="">
+                            <p class="carousel__p">TITULO: UNCHARTED </p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/5165456.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt="">
+                            <p class="carousel__p">TITULO: UNCHARTED </p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/5165456.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt="">
+                            <p class="carousel__p">TITULO: UNCHARTED </p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/5165456.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt="">
+                            <p class="carousel__p">TITULO: UNCHARTED </p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/5165456.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt="">
+                            <p class="carousel__p">TITULO: UNCHARTED </p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/5165456.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt="">
+                            <p class="carousel__p">TITULO: UNCHARTED </p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/5165456.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt="">
+                            <p class="carousel__p">TITULO: UNCHARTED </p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/5165456.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt="">
+                            <p class="carousel__p">TITULO: UNCHARTED </p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/5165456.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt="">
+                            <p class="carousel__p">TITULO: UNCHARTED </p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/5165456.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt="">
+                            <p class="carousel__p">TITULO: UNCHARTED </p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/5165456.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt="">
+                            <p class="carousel__p">TITULO: UNCHARTED </p>
+                        </div>
+                    </div>
+                    <button aria-label="siguiente" class="carousel__siguiente2  carousel__siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <!--Div para los indicadores, tendrá un rol de tablist el cual tendrá una lista de tabulación-->
+                <div role="tablist" class="carousel__indicadores2 carousel__indicadores"></div>
+            </div>            
+        </section>  
+        <section class="section-movies">
+            <h2 class="section-movies__title">Peliculas a terminar</h2>
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="anterior" class="carousel__anterior3  carousel__anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel__lista">
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/002_m.jpg" alt="">
+                            <p class="carousel__p">TITULO: VENOM 2</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/portada.png " alt="">
+                            <p class="carousel__p">TITULO: NO TIME NO DIE</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/39d101063c4e217323df91b0551175af.jpg" alt="">
+                            <p class="carousel__p">TITULO: TITANIC</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/4aa709fb827464c325ee3c63f07b8a6c.jpg" alt="">
+                            <p class="carousel__p">TITULO: MALÉFICA</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/001_m.jpg" alt="">
+                            <p class="carousel__p">TITULO: RUEGA POR NOSOTROS</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/black-panther-posters-individuales_8.jpg" alt="">
+                            <p class="carousel__p">TITULO: PANTERA NEGRA</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/images.jpg" alt="">
+                            <p class="carousel__p">TITULO: JHON WICK 3</p>
+                        </div>
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/descarga.jpg" alt="">
+                            <p class="carousel__p">TITULO: SPIDER-MAN NO WAY HOME</p>
+                        </div>   
+                        <div class="carousel__elemento">
+                            <img class="carousel__img" src="img/movie/5165456.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg" alt="">
+                            <p class="carousel__p">TITULO: UNCHARTED </p>
+                        </div>
+                    </div>
+                    <button aria-label="siguiente" class="carousel__siguiente3  carousel__siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <!--Div para los indicadores, tendrá un rol de tablist el cual tendrá una lista de tabulación-->
+                <div role="tablist" class="carousel__indicadores3 carousel__indicadores"></div>
+            </div>            
+        </section>  
+
+        
+        <div class="show-image">
+            <img src="" alt="">
+            <p></p>
+        </div>
+
+        <!-- Follow -->
+        <section class="social">
+            <p>Siguenos en las redes sociales</p>
+            <div class="links">
+                <a href="https://facebook.com">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h3>© 2022 Netflix Copyright </h3>
+        <div class="line"></div>
+    </footer>
+    
+    <!--script de gliderJs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.7/glider.min.js" integrity="sha512-tHimK/KZS+o34ZpPNOvb/bTHZb6ocWFXCtdGqAlWYUcz+BGHbNbHMKvEHUyFxgJhQcEO87yg5YqaJvyQgAEEtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Kit de iconos-->
+    <script src="https://kit.fontawesome.com/42778bfa5e.js" crossorigin="anonymous"></script>
+
+    <script src="js/movie.js"></script>S
+</body>
+</html>
