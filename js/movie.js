@@ -21,7 +21,6 @@ window.addEventListener("scroll",()=>{
 /*MANEJO DEL VIDEO, EMDIANTE EL ICON DE VOLUMEN */
 let iconVol=document.querySelector(".container-vol__vol");
 let video=document.querySelector(".header__video");
-console.log(video)
 iconVol.addEventListener("click",function(){
 	// console.log(iconVol.children[0]);
 	if(iconVol.children[0].classList.contains("fa-volume-up")){
@@ -148,3 +147,13 @@ window.addEventListener('load', function(){
 });
 
 
+/*contenedor de opciones*/
+let estado_opciones = document.getElementById("opciones");
+let estado_mostrar = document.getElementsByClassName("nav-left__icon1")[0];
+let estado_ocultar = document.getElementById("opciones__ocultar");
+estado_mostrar.onclick = (e) =>{
+	estado_opciones.style.display = "block";
+}
+estado_ocultar.onclick = (e) =>{
+	estado_opciones.style.display = "none";
+}

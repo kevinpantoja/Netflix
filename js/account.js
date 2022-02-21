@@ -31,9 +31,14 @@ administrar.onclick = function() {
 
 var cuentas = document.getElementsByClassName("contenedor__cuenta");
 for(let cuenta of cuentas){
-    cuenta.children[1].children[0].onclick = function(){
-        let rutaImagen = this.parentElement.parentElement.children[0].src;
-        let nombre = this.parentElement.parentElement.children[2].innerText;
-        window.location.href="./editAccount.php?ruta='"+rutaImagen+"'&nombre='"+nombre+"'";
+    cuenta.onclick = function(){
+        if(estado){
+            let rutaImagen = this.children[0].src;
+            let nombre = this.children[2].innerText;
+            window.location.href="./editAccount.php?ruta='"+rutaImagen+"'&nombre='"+nombre+"'";
+        }
+        else{
+            window.location.href="./movie.html";
+        }
     }
 }
