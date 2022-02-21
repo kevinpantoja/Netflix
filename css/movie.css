@@ -19,6 +19,8 @@
 body{ 
     font-family: sans-serif;
     overflow-x: hidden;            /*Scroll-x, lo ocultamos*/
+
+    width: 100vw;
 }
 
 ::-webkit-scrollbar {              /*webkit para el scroll*/
@@ -282,6 +284,7 @@ body{
 main{
     background-color: rgb(19, 19, 19);
     width: 100%;
+    padding: 0 2rem;
 }
 .section-movies{
 	width: 90%;
@@ -450,6 +453,7 @@ main{
 }
 .opciones__division{
     border-bottom: 2px black solid;
+    color: rgb(219, 215, 215);
     padding: 15px 15px;
     font-size: 17px;
     display: flex;

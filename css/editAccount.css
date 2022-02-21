@@ -14,21 +14,27 @@
 }
 body{
     height: 100vh;
+    width: 100vw;
 }
 a{
     cursor: pointer;
 }
 header{
-    height: 60px;
     display: flex;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     align-items: center;
     background-color: red;
-    
+    flex-wrap: wrap;
+    gap: 5px;
+    height: 90px;
 }
 .cabecera{
+    display: flex;
     font-size: 1.3rem;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: auto 0;
 }
 .cabecera span{
     margin-right: 1.5rem;
@@ -38,7 +44,8 @@ header{
 .fondo{
     background-color: rgb(10,10,10); 
     display: flex;
-    height:calc(100% - 60px);
+    height: calc(100vh - 90px);
+    
 }
 
 .contenedor{
@@ -50,11 +57,13 @@ header{
     align-items: center;
     margin: auto;
     grid-gap: 2rem;
+    padding: 0 10px;
 }
 .contenedor > img{
     width: 110px;
     height: 110px;
     grid-area: img;
+    margin: 0 auto;
 }
 .contenedor > input[type="text"]{
     font-size: 1rem;
@@ -63,6 +72,7 @@ header{
     grid-area: texto;
     width: 100%;
     border: 2px solid white;
+    margin: 0 auto;
 }
 .contenedor > input[type="text"]:active{
     border: 2px solid red;
@@ -109,4 +119,31 @@ header{
 }
 #btn-switch{
     display: none;
+}
+
+
+@media (max-width:500px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "img"
+                    "texto"
+                    "kids";
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        grid-gap: 2rem;
+        padding: 0 10px;
+    }
+    header{
+        padding: 0 2rem;
+    }
+    .cabecera{
+        font-size: 18px;
+        padding: auto 0;
+    }
+
+    .contenedor > div{
+        margin: 0 auto;
+    }
 }
