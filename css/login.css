@@ -15,7 +15,7 @@
 body{
     font-size: 22px;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(/img/fondo-login.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../img/fondo-login.jpg);
     display: flex;
     background-size: cover;
     flex-direction: column;

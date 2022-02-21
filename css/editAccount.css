@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 240, 240);
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    transition: all;
+    transition-duration: .3s;
+    border: none;
+    box-sizing: border-box;
+    background: none;
+	border: none;
+	outline: inherit;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+}
+a{
+    cursor: pointer;
+}
+header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+    background-color: red;
+    
+}
+.cabecera{
+    font-size: 1.3rem;
+}
+.cabecera span{
+    margin-right: 1.5rem;
+    margin-left: .4rem;
+    font-weight: lighter;
+}
+.fondo{
+    background-color: rgb(10,10,10); 
+    display: flex;
+    height:calc(100% - 60px);
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-areas: "img texto"
+                "img kids";
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    grid-gap: 2rem;
+}
+.contenedor > img{
+    width: 110px;
+    height: 110px;
+    grid-area: img;
+}
+.contenedor > input[type="text"]{
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0 .5rem;
+    grid-area: texto;
+    width: 100%;
+    border: 2px solid white;
+}
+.contenedor > input[type="text"]:active{
+    border: 2px solid red;
+}
+.contenedor > input[type="text"]:focus{
+    border: 2px solid red;
+}
+.contenedor > div{
+    grid-area: kids;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.lbl-switch{
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    border: 2px solid white;
+    background-color: none;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+}
+#btn-switch:checked~ .lbl-switch{
+    background: #61A0FF;
+    border: #61A0FF;
+}
+.lbl-switch:after{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 100px;
+    top: 3px;
+    left: 4px;
+    transition: .3s;
+}
+#btn-switch:checked~ .lbl-switch:after{
+    left: 42px;
+    width: 13px;
+    height: 13px;
+    top: 6px;
+}
+#btn-switch{
+    display: none;
+}

@@ -49,7 +49,7 @@ formulario.addEventListener('submit', (e) => {
     e.preventDefault();
     if(campos.correo && campos.password){
         if(inputs[0].value == correo && inputs[1].value == password){
-            window.location.href = "/account.html";
+            window.location.href = "../account.html";
         }
     }
     document.getElementById("alerta-incompatible").style.display = "block";
