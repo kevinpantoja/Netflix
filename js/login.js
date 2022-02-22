@@ -52,5 +52,7 @@ formulario.addEventListener('submit', (e) => {
             window.location.href = "./account.html";
         }
     }
-    document.getElementById("alerta-incompatible").style.display = "block";
+	else{
+		document.getElementById("alerta-incompatible").style.display = "block";
+	}
 });

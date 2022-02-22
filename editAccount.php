@@ -33,7 +33,9 @@
             <div><input type="checkbox" id="btn-switch"><label class="lbl-switch" for="btn-switch"></label>¿Kids?</div>
         </div>
     </section>
-    <script src="https://kit.fontawesome.com/c577200585.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/42778bfa5e.js" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/9e7e6d804a.js" crossorigin="anonymous"></script>
     <script src="js/login.js"></script>
 </body>
 </html>

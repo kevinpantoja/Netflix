@@ -25,22 +25,23 @@ iconVol.addEventListener("click",function(){
 	// console.log(iconVol.children[0]);
 	if(iconVol.children[0].classList.contains("fa-volume-up")){
 		video.muted=true;
-		iconVol.children[0].classList.replace("fa-volume-up","fa-volume-off");	
+		iconVol.children[0].classList.replace("fa-volume-up","fa-volume-off");
+		console.log(1);	
 	}else if(iconVol.children[0].classList.contains("fa-volume-off")){
 		video.muted=false;
 		video.volume=0.5;
 		iconVol.children[0].classList.replace("fa-volume-off","fa-volume-up");
 	}else{
 		video.play();
-		iconVol.children[0].classList.replace("fa-play","fa-volume-off");	
+		iconVol.children[0].classList.replace("fa-repeat","fa-volume-off");	
 		video.muted=true;
 	}
 });
 video.addEventListener("ended",(e)=>{
 	if(iconVol.children[0].classList.contains("fa-volume-up")==true){
-		iconVol.children[0].classList.replace("fa-volume-up","fa-play");	
+		iconVol.children[0].classList.replace("fa-volume-up","fa-repeat");	
 	}else{
-		iconVol.children[0].classList.replace("fa-volume-off","fa-play");
+		iconVol.children[0].classList.replace("fa-volume-off","fa-repeat");
 	}
 })
 
