@@ -51,7 +51,7 @@ body{
     z-index: 10;
 }
 .header__video{
-    width:  110%;                                       /*Ojo:El alto ya está definido por el ancho*/
+    width:  100%;                                       /*Ojo:El alto ya está definido por el ancho*/
     opacity: 60%;
 }
 /**NAV-MENU-**/
@@ -97,7 +97,7 @@ body{
     padding: 5% 5% 5% 5%;
 }
 .nav-right__icon4{
-    padding: 5% 5% 5% 5%;
+    padding: 5% 6% 5% 5%;
 }
 .header-nav>div>span:hover{
     background-color: black;
@@ -111,9 +111,9 @@ body{
     height: 60px;
     width: 300px;
     right: 0;
-    top: 7%;
+    top: 6.4%;
     transition: var(--trasicion);
-    z-index: 700;
+    z-index: 210;
     transform: translate(100%);
 }
 .spread{
@@ -138,9 +138,9 @@ body{
     position: absolute;
     display: block;
     flex-wrap: wrap;
-    margin-top: 15%;
+    margin-top: 12%;
     left: 5%;
-    width: 50%;
+    width: 60%;
     height: 42%;
     padding: 1px 1px 1px 1px;
     align-items: center;
@@ -211,17 +211,19 @@ body{
 .container-vol{
     display: flex;
     position: absolute;
-    width:30%;
+    width:25%;
     margin-top: 32%;
-    right: 0px;
+    right: 0%;
     cursor: pointer;
     z-index: 10;    
     overflow: hidden;
-    transition: all .3s linear;
-    transform: translate(35%);
+    transition: all 0.3s linear;
+    /* transition: all .3s linear;
+    transform: translate(35%); */
 }
 .container-vol:hover{
-    transform: translate(25%);
+        /* transform: translate(25%); */
+    width: 28%;
 }
 .container-vol__vol{
     width: 40px;
@@ -301,6 +303,11 @@ main{
     height: 300px;
     width: 250px;
 }
+.carousel__img:hover{
+    padding: 5px;
+    background-color: rgba(165, 9, 9, 0.6);
+
+}
 .carousel__elemento>p{
    display: none;
 }
@@ -363,7 +370,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    z-index: 120;
+    z-index: 220;
     background-color: rgba(0,0,0,.7);
 
     padding:100px 20px;
@@ -421,8 +428,6 @@ main{
 .footer h3{
     font-size: 2em;
 }
-
-
 .line{
     width: 90%;
     max-width: 1200px;
@@ -431,8 +436,9 @@ main{
     background: #fff;
     margin-bottom: 60px; 
 }
+
   
-/*barra de opciones*/
+/**barra de opciones**/
 .opciones{
     background-color: rgb(25,25,25);
     position: fixed;
@@ -488,14 +494,37 @@ main{
     padding-bottom: 0;
 }
 
+@media(max-width:1000px){
+    .container-content{
+        height: 35%;
+    }
 
-@media(max-width:750px){
-
-    .content-top{
-        height: 1 vh;
+    .container-content__toph2{
+        font-size: 0.9em;
+    }
+    .content-medium{
+        height: 30%;
+    }
+    .container-content__med-h1{
+        font-size: 3em;
+    }
+    .container-content__med-h2{
+        font-size: 1.5em;
+    }
+    .content-bottom{
+        height: 20%;
+    }
+    .content-bottom>button{
+        margin: 1em;
+        font-size: 12px;
+    }
+}
+@media(max-width:700px){
+    .container-content{
+        height: 35%;
     }
     .container-content__toph2{
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
     .content-medium{
         height: 20%;
@@ -507,10 +536,17 @@ main{
         font-size: 1em;
     }
     .content-bottom{
-        height: 10%;
+        height: 15%;
     }
     .content-bottom>button{
-        margin: 0;
+        margin: 1em;
+        font-size: 10px;
+    }
+    .social p{
+        font-size: 20px;
+    }
+    .footer h3{
+        font-size: 25px;
     }
 }
 
@@ -518,8 +554,10 @@ main{
     .content-top{display: none;}
     .content-medium{display: none;}
     .content-bottom{display: none;}
-    .container-points>a{
-        font-size: 0.5em;
+    .container-points{
+       top: 5.5%;
+       width: 200px;
+       font-size: 12px;
     }
     .container-vol{
         margin-top: 20%;
@@ -532,6 +570,28 @@ main{
     }
     .container-vol__bar{
         display: none;
+    }
+    .section-movies h2{
+        font-size: 20px;
+    }
+    .show-image img{
+        width:200px; 
+    }
+    .show-image p{
+        font-size: 13px;
+    }
+
+    .social{
+        padding: 2rem;
+    }
+    .social p{
+        font-size: 15px;
+    }
+    .links a i {
+        font-size: 2rem;
+    }
+    .footer h3{
+        font-size: 20px;
     }
 
 }
@@ -547,7 +607,13 @@ main{
     .container-search__icon1{
         margin: 0;
     }
-    .container-points>a{
-        font-size: 0.5em;
+    .container-points{
+        width: 100px;
+    }
+    .show-image img{
+        width:150px; 
+    }
+    .show-image p{
+        font-size: 10px;
     }
 }

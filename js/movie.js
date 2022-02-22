@@ -158,3 +158,4 @@ estado_mostrar.onclick = (e) =>{
 estado_ocultar.onclick = (e) =>{
 	estado_opciones.style.display = "none";
 }
+
